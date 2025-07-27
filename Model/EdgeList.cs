@@ -4,7 +4,7 @@ namespace QaProjectReader.Model;
 
 internal class EdgeList
 {
-    public Edge[] Edges { get; set; }
+    public Edge[] Edges { get; set; } = [];
 
     public EdgeList()
     {
@@ -27,9 +27,9 @@ internal class Edge
     public int Index { get; set; }
     public int StartVertex { get; set; }
     public int EndVertex { get; set; }
-    public float[] StartControlPoint { get; set; }
+    public float[]? StartControlPoint { get; set; }
 
-    public float[] EndControlPoint { get; set; }
+    public float[]? EndControlPoint { get; set; }
 
     public Edge()
     {

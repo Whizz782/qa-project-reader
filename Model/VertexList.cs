@@ -5,7 +5,7 @@ namespace QaProjectReader.Model;
 
 internal class VertexList
 {
-    public float[][] Vertices { get; set; }
+    public float[][] Vertices { get; set; } = [];
 
     public VertexList()
     {

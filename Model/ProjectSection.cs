@@ -1,6 +1,5 @@
 ﻿using QaProjectReader.Helpers;
 using System.Diagnostics;
-using System.Text;
 
 namespace QaProjectReader.Model;
 

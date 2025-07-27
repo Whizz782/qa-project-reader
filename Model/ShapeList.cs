@@ -1,6 +1,4 @@
-﻿using System.Diagnostics;
-using System.Text;
-using QaProjectReader.Helpers;
+﻿using QaProjectReader.Helpers;
 
 namespace QaProjectReader.Model;
 
@@ -33,7 +31,7 @@ internal class Shape
     public int[] Children { get; set; }
     public int[] Edges { get; set; }
     public bool[] NewSegment { get; set; }
-    private int _color;
+    private readonly int _color;
     public string Color => "#" + (_color & 0xFFFFFF).ToString("x6");
     public string? Name { get; set; }
     public int SwatchId { get; set; }

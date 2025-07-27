@@ -1,6 +1,4 @@
-﻿using System.Text;
-
-namespace QaProjectReader.Model;
+﻿namespace QaProjectReader.Model;
 
 internal class QaProject
 {
@@ -43,8 +41,7 @@ internal class QaProject
                     ShapeList.Add(new Shape(section.Data));
                     break;
                 default:
-                    Console.WriteLine(section.ToString());
-                    break;
+                    throw new NotSupportedException(section.ToString());
             }
         }
     }
